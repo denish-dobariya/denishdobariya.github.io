@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Denish Dobariya | Electrical Engineer (EIT)</title>
+  <meta name="description" content="Electrical Engineer (EIT) — Power Systems, Protection & Control, Solar + BESS, Substations, Studies (ETAP/PSCAD)." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Denish Dobariya | Electrical Engineer (EIT)" />
+  <meta property="og:description" content="Power Systems • Protection & Control • Solar + BESS • Substations • Studies" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --muted:#a8b3cf;
+      --text:#e9eeff;
+      --line:rgba(255,255,255,.10);
+      --brand:#7aa2ff;
+      --brand2:#57e0c3;
+      --chip:rgba(122,162,255,.12);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 1080px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:
+        radial-gradient(1200px 800px at 10% 10%, rgba(122,162,255,.22), transparent 55%),
+        radial-gradient(900px 700px at 90% 15%, rgba(87,224,195,.16), transparent 60%),
+        radial-gradient(700px 700px at 30% 95%, rgba(255,255,255,.06), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
+    header{
+      display:flex; gap:18px; justify-content:space-between; align-items:flex-start;
+      padding:22px; border:1px solid var(--line); background:rgba(15,26,51,.72);
+      border-radius:var(--radius); box-shadow:var(--shadow); backdrop-filter: blur(10px);
+      position:sticky; top:14px; z-index:20;
+    }
+    .id{display:flex; flex-direction:column; gap:8px}
+    .name{font-size:22px; font-weight:750; letter-spacing:.2px}
+    .role{color:var(--muted); font-weight:550}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:14px}
+    .meta span{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.03)}
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px; border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      font-weight:650; font-size:14px;
+      transition: transform .08s ease, background .2s ease;
+    }
+    .btn:hover{background:rgba(255,255,255,.06)}
+    .btn:active{transform:translateY(1px)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(122,162,255,.35), rgba(87,224,195,.20));
+      border-color: rgba(122,162,255,.35);
+    }
+    .grid{
+      display:grid; grid-template-columns: 1.35fr .65fr; gap:18px; margin-top:18px;
+    }
+    @media (max-width: 980px){
+      header{position:relative; top:auto}
+      .grid{grid-template-columns:1fr}
+      nav{justify-content:flex-start}
+    }
+    .card{
+      border:1px solid var(--line);
+      background:rgba(15,26,51,.58);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+      backdrop-filter: blur(10px);
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .lead{
+      font-size:16px; margin:0;
+      color:rgba(233,238,255,.92);
+    }
+    .kpis{display:grid; grid-template-columns: repeat(3,1fr); gap:10px; margin-top:14px}
+    .kpi{
+      padding:12px; border:1px solid var(--line); border-radius:14px;
+      background:rgba(255,255,255,.03);
+    }
+    .kpi b{display:block; font-size:16px}
+    .kpi span{color:var(--muted); font-size:13px}
+    .chips{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{
+      padding:8px 10px; border-radius:999px; background:var(--chip);
+      border:1px solid rgba(122,162,255,.22);
+      font-size:13px; color:rgba(233,238,255,.92); font-weight:600;
+    }
+    .muted{color:var(--muted)}
+    .section{margin-top:18px}
+    .item{
+      padding:14px; border:1px solid var(--line); border-radius:16px;
+      background:rgba(255,255,255,.03);
+      margin-top:10px;
+    }
+    .item .top{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+    .item .title{font-weight:750}
+    .item .where{color:var(--muted); font-weight:650}
+    .item .when{color:var(--muted); font-family:var(--mono); font-size:12px}
+    ul{margin:10px 0 0 18px; color:rgba(233,238,255,.90)}
+    li{margin:6px 0}
+    .split{
+      display:grid; grid-template-columns:1fr 1fr; gap:12px;
+    }
+    @media (max-width: 680px){ .split{grid-template-columns:1fr} .kpis{grid-template-columns:1fr} }
+    .footer{
+      margin-top:20px; color:var(--muted); font-size:13px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    }
+    .tagline{font-family:var(--mono); opacity:.9}
+    .search{
+      display:flex; gap:10px; align-items:center;
+      padding:12px; border:1px solid var(--line); border-radius:14px;
+      background:rgba(255,255,255,.03);
+      margin-top:10px;
+    }
+    .search input{
+      width:100%; background:transparent; border:none; outline:none; color:var(--text);
+      font-size:14px;
+    }
+    .pill{
+      font-family:var(--mono); font-size:12px; color:var(--muted);
+      border:1px solid var(--line); border-radius:999px; padding:6px 10px;
+      background:rgba(255,255,255,.02);
+      white-space:nowrap;
+    }
+    .hide{display:none !important}
+  </style>
+
+  <!-- Structured data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Denish Dobariya",
+    "jobTitle":"Electrical Engineer (EIT)",
+    "address":{"@type":"PostalAddress","addressLocality":"Calgary","addressRegion":"AB","addressCountry":"CA"},
+    "email":"mailto:denish.dobariya1999@gmail.com",
+    "telephone":"+1-587-971-8871",
+    "sameAs":["https://www.linkedin.com/in/denish-dobariya-b69b86175"]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="id">
+        <div class="name">Denish Dobariya</div>
+        <div class="role">Electrical Engineer (EIT) • Power Systems • Protection & Control • Solar + BESS • Substations</div>
+        <div class="meta">
+          <span>📍 Calgary, AB</span>
+          <span>✉️ <a href="mailto:denish.dobariya1999@gmail.com">denish.dobariya1999@gmail.com</a></span>
+          <span>📞 <a href="tel:+15879718871">+1 587-971-8871</a></span>
+          <span>🔗 <a href="https://www.linkedin.com/in/denish-dobariya-b69b86175" target="_blank" rel="noreferrer">LinkedIn</a></span>
+        </div>
+      </div>
+
+      <nav aria-label="Sections">
+        <a class="btn primary" href="#projects">Projects</a>
+        <a class="btn" href="#experience">Experience</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#education">Education</a>
+        <a class="btn" href="#contact">Contact</a>
+        <button class="btn" id="printBtn" type="button" title="Print / Save as PDF">🖨️ PDF</button>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <!-- LEFT COLUMN -->
+      <main>
+        <section class="card">
+          <h2>Summary</h2>
+          <p class="lead">
+            Electrical Engineer-in-Training with experience in utility distribution and renewable + BESS projects,
+            including protection & control design, SCADA integration, and power system studies (load flow, short-circuit,
+            coordination). Comfortable producing complete drawing packages, relay settings documentation, and field/commissioning support.
+          </p>
+
+          <div class="kpis" aria-label="Highlights">
+            <div class="kpi"><b>Utility & Distribution</b><span>LV/MV design packages, SLDs, layouts</span></div>
+            <div class="kpi"><b>P&C + SCADA</b><span>Protection philosophies, I/O mapping, narratives</span></div>
+            <div class="kpi"><b>Studies</b><span>Short-circuit, coordination, load flow</span></div>
+          </div>
+
+          <div class="search" role="search" aria-label="Search projects and experience">
+            🔎 <input id="filterBox" placeholder="Type to filter (e.g., 'SCADA', 'ETAP', 'BESS', 'substation')" />
+            <span class="pill">Live filter</span>
+          </div>
+        </section>
+
+        <section id="projects" class="card section">
+          <h2>Featured Projects</h2>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Ikayuut Solar Energy Project — Naujaat, NWT</div>
+                <div class="where">Power-Link Technologies • Protection & Control (P&C)</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Led turnkey P&C design for remote microgrid integrating <b>500 kW solar PV</b> + <b>500 kW BESS</b>.</li>
+              <li>Developed protection philosophies (IBR protection, feeder protection, islanded/utility-interactive modes).</li>
+              <li>Produced SLDs, protection schematics, and wiring diagrams aligned with Canadian standards/utility requirements.</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Pine Forest Solar + BESS — Collector Substation</div>
+                <div class="where">Power-Link Technologies • P&C + SCADA</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Delivered detailed P&C architecture (feeder/transformer/bus protection; comm networks).</li>
+              <li>Developed SCADA point lists, I/O mapping, and protocols for control-center integration.</li>
+              <li>Prepared settings documentation and supported FAT/commissioning deliverables.</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Jet Power Substation — Whitehorse, Yukon</div>
+                <div class="where">Power-Link Technologies • Studies + Relay Settings</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Completed P&C design and produced utility-compliant schematics and logic drawings.</li>
+              <li>Performed power system studies: <b>short-circuit</b>, <b>protection coordination</b>, <b>load flow</b> and contingency assessments.</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Midnight Sun Complex — Northwest Territories</div>
+                <div class="where">Power-Link Technologies • Renewables + Storage P&C</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Designed protection and control for inverter-based resources: fault detection, islanding, restoration logic.</li>
+              <li>Produced complete engineering drawing packages (SLDs, protection diagrams, comm layouts).</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Snowline Gold Mines — Yukon</div>
+                <div class="where">Power-Link Technologies • Generation Feed Studies</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Evaluated diesel/renewable/hybrid + storage options for remote mining operation power supply.</li>
+              <li>Performed load analysis, sizing, modeling, and reliability/scalability assessments.</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Dixie Mississauga 200 MW Data Centre — Ontario</div>
+                <div class="where">Power-Link Technologies • Utility SIA Package</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Developed detailed electrical designs (SLDs, grounding, protection schematics) for utility interconnection submissions.</li>
+              <li>Coordinated designs for redundancy and high-reliability requirements typical of hyperscale data centers.</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Diageo Distillery 230 kV Substation — Sarnia, Ontario</div>
+                <div class="where">Power-Link Technologies • Substation Design</div>
+              </div>
+              <div class="when">Jun 2024 – Jan 2026</div>
+            </div>
+            <ul>
+              <li>Delivered substation design package: SLDs, layouts, control/protection schematics.</li>
+              <li>Specified major equipment (power transformers, HV breakers, relays/control systems) and supported design reviews.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="experience" class="card section">
+          <h2>Experience</h2>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Electrical Engineer (EIT)</div>
+                <div class="where">Power-Link Technologies • Calgary, AB</div>
+              </div>
+              <div class="when">Jun 2024 – Present</div>
+            </div>
+            <ul>
+              <li>Designed LV/MV distribution systems, prepared utility packages, and supported construction/commissioning.</li>
+              <li>Produced SLDs, construction drawings, and material take-offs; coordinated with utilities/municipalities and civil teams.</li>
+              <li>Supported QA/QC site visits, RFIs, and as-built/close-out documentation.</li>
+            </ul>
+            <div class="chips" style="margin-top:10px">
+              <span class="chip">Utility standards (Fortis/ATCO)</span>
+              <span class="chip">Drawings + packages</span>
+              <span class="chip">Commissioning support</span>
+            </div>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Electrical Design Engineer (EIT)</div>
+                <div class="where">Solar YYC • Calgary, AB</div>
+              </div>
+              <div class="when">Jun 2023 – Jun 2024</div>
+            </div>
+            <ul>
+              <li>Conducted solar feasibility assessments (shading, orientation, load/consumption review).</li>
+              <li>Modeled/optimized PV systems using Aurora, PVsyst, HelioScope; created electrical SLDs in AutoCAD.</li>
+              <li>Prepared equipment specs and installation plans for smooth execution.</li>
+            </ul>
+            <div class="chips" style="margin-top:10px">
+              <span class="chip">Aurora</span>
+              <span class="chip">PVsyst</span>
+              <span class="chip">HelioScope</span>
+              <span class="chip">AutoCAD</span>
+            </div>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Graduate Teaching Assistant</div>
+                <div class="where">University of Calgary • Calgary, AB</div>
+              </div>
+              <div class="when">Sep 2022 – Jan 2023</div>
+            </div>
+            <ul>
+              <li>Supported course prep; led labs on embedded systems and interfaces.</li>
+              <li>Helped students troubleshoot hardware/software and debug code.</li>
+            </ul>
+          </article>
+
+          <article class="item filterable">
+            <div class="top">
+              <div>
+                <div class="title">Electrical Engineer</div>
+                <div class="where">Pelican Rotoflex Pvt. Ltd. • Gujarat, India</div>
+              </div>
+              <div class="when">May 2020 – Jun 2021</div>
+            </div>
+            <ul>
+              <li>Developed control systems for automated machinery; programmed PLCs using TIA Portal / Simotion Scout.</li>
+              <li>Troubleshot electrical/automation issues and supported maintenance activities.</li>
+            </ul>
+            <div class="chips" style="margin-top:10px">
+              <span class="chip">PLC</span>
+              <span class="chip">TIA Portal</span>
+              <span class="chip">Simotion Scout</span>
+            </div>
+          </article>
+        </section>
+
+        <section id="education" class="card section">
+          <h2>Education</h2>
+          <div class="split">
+            <div class="item filterable">
+              <div class="top">
+                <div>
+                  <div class="title">M.Eng — Electrical & Computer Engineering (Energy & Environment)</div>
+                  <div class="where">University of Calgary • Calgary, AB</div>
+                </div>
+                <div class="when">Sep 2021 – Apr 2023</div>
+              </div>
+              <div class="muted">CGPA: 3.4 / 4.0</div>
+            </div>
+
+            <div class="item filterable">
+              <div class="top">
+                <div>
+                  <div class="title">B.Tech — Electrical Engineering</div>
+                  <div class="where">Gujarat Technological University • India</div>
+                </div>
+                <div class="when">Aug 2016 – Aug 2020</div>
+              </div>
+              <div class="muted">CGPA: 3.9 / 4.0</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- RIGHT COLUMN -->
+      <aside>
+        <section id="skills" class="card">
+          <h2>Skills</h2>
+
+          <div class="muted" style="margin-bottom:10px; font-weight:700">Power / Protection / Studies</div>
+          <div class="chips">
+            <span class="chip">ETAP</span>
+            <span class="chip">PSCAD</span>
+            <span class="chip">PowerWorld</span>
+            <span class="chip">Arc Flash</span>
+            <span class="chip">Short Circuit</span>
+            <span class="chip">Load Flow</span>
+            <span class="chip">Grounding Studies</span>
+            <span class="chip">Power Quality</span>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="muted" style="margin-bottom:10px; font-weight:700">Renewables + Design Tools</div>
+          <div class="chips">
+            <span class="chip">AutoCAD</span>
+            <span class="chip">PVsyst</span>
+            <span class="chip">HelioScope</span>
+            <span class="chip">Aurora</span>
+            <span class="chip">PQSCADA Sapphire</span>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="muted" style="margin-bottom:10px; font-weight:700">Data / Programming</div>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Excel</span>
+            <span class="chip">C/C++</span>
+            <span class="chip">MATLAB</span>
+            <span class="chip">HTML/CSS/JS</span>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="muted" style="margin-bottom:10px; font-weight:700">Certifications / Training</div>
+          <div class="chips">
+            <span class="chip">H2S Alive</span>
+            <span class="chip">Fall Protection</span>
+            <span class="chip">CSTS</span>
+            <span class="chip">First Aid / CPR / AED</span>
+            <span class="chip">SEL University (eRLY/CBT)</span>
+          </div>
+        </section>
+
+        <section class="card section">
+          <h2>Selected Academic Projects</h2>
+          <div class="item filterable">
+            <div class="title">Switching Over-Voltages & Surge Arresters (PSCAD/EMTDC)</div>
+            <div class="muted">Modeling & analysis of switching transients; arrester modeling</div>
+          </div>
+          <div class="item filterable">
+            <div class="title">Electricity Markets: UC / OPF (Pyomo)</div>
+            <div class="muted">Solar impact on unit commitment; ACOPF/SCOPF formulation</div>
+          </div>
+          <div class="item filterable">
+            <div class="title">V2G Multifunctional Grid-Connected Inverter (MATLAB)</div>
+            <div class="muted">Voltage regulation support using EV batteries</div>
+          </div>
+        </section>
+
+        <section id="contact" class="card section">
+          <h2>Contact</h2>
+          <div class="item">
+            <div class="muted">Email</div>
+            <div class="title"><a href="mailto:denish.dobariya1999@gmail.com">denish.dobariya1999@gmail.com</a></div>
+          </div>
+          <div class="item">
+            <div class="muted">Phone</div>
+            <div class="title"><a href="tel:+15879718871">+1 587-971-8871</a></div>
+          </div>
+          <div class="item">
+            <div class="muted">LinkedIn</div>
+            <div class="title"><a href="https://www.linkedin.com/in/denish-dobariya-b69b86175" target="_blank" rel="noreferrer">
+              linkedin.com/in/denish-dobariya-b69b86175
+            </a></div>
+          </div>
+          <p class="muted" style="margin:12px 0 0">
+            Tip: Add a “Download Resume PDF” button here once you upload your PDF to the same site folder.
+          </p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="footer">
+      <div class="tagline">Built for recruiters: fast, searchable, printable.</div>
+      <div class="muted">© <span id="year"></span> Denish Dobariya</div>
+    </div>
+  </div>
+
+  <script>
+    // Print / Save as PDF
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Live filter (projects + experience + academic)
+    const filterBox = document.getElementById('filterBox');
+    const cards = Array.from(document.querySelectorAll('.filterable'));
+
+    filterBox.addEventListener('input', () => {
+      const q = filterBox.value.trim().toLowerCase();
+      cards.forEach(el => {
+        const text = el.innerText.toLowerCase();
+        el.classList.toggle('hide', q && !text.includes(q));
+      });
+    });
+  </script>
+</body>
+</html>
